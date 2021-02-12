@@ -17,6 +17,8 @@ body{
     padding: 0;
 }
 
+
+
 /* Nav */
 .nav{
     background-color: black;
@@ -46,6 +48,7 @@ body{
 }
 .nav span{
     font-size: 30px;
+    color: rgb(219, 0, 0);
 }
 .items-nav a{
     text-decoration: none;
@@ -56,6 +59,7 @@ body{
 .items-nav i{
     color: rgb(241, 233, 233);  
     padding-right: 4px;
+    color: rgb(190, 0, 0);
 }
 /* NavHover */
 .items-nav a:hover{
@@ -69,7 +73,7 @@ body{
     justify-content: center;
     text-align: center;
     padding-top: 30px;
-    /* border-bottom: 10px solid black; */
+    margin-bottom: 180px;
 }
 
 .main h2{
@@ -77,7 +81,9 @@ body{
     font-size: 40px;
     padding-bottom: 10px;
 }
-
+.DondeEncontrarnos span{
+    color: rgb(219, 0, 0);
+}
 .horario{
     background-color: black;
     color: rgb(255, 255, 255);
@@ -97,6 +103,7 @@ body{
 .horario h3{
     border-bottom: 2px solid white;
     font-family: 'Sriracha', cursive;
+    color: rgb(219, 0, 0);
 }
 .horario p{
     /* padding-top: 10px; */
@@ -132,6 +139,7 @@ body{
 .contacto h3{
     border-bottom: 2px solid white;
     font-family: 'Sriracha', cursive;
+    color: rgb(219, 0, 0);
 }
 .contacto p{
     /* padding-top: 10px; */
@@ -190,15 +198,32 @@ body{
 .i-n-res{
     padding: 10px;
 }
+
+
+/* Slider */
+.f-lugar{
+    display:flex;
+    justify-content: center;
+}
+.f-lugar h3{
+    display: inline-block;
+    border-bottom: 3px solid rgb(219, 0, 0);
+    padding: 0;
+    margin: 0%;
+}
+
+
 @media (max-width: 1250px){
     .main{
         flex-direction: column;
+        margin-bottom: 0;
     }
    .info{
        position: initial;
        display: flex;
        margin-top: 80px;
        justify-content: space-around;
+       height: 560px;
    }
    .contacto{
     width: 400px;
@@ -272,3 +297,17 @@ body{
         border-bottom: 2px solid white;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,3 +12,18 @@ barX.addEventListener("click",()=>{
     bar.style.display = "block"
     barX.style.display = "none"
 })
+
+
+
+
+$(document).ready(function(){
+
+	$('.flexslider').flexslider({
+		prevText: "",
+		nextText: "",
+		pauseOnAction: false,
+		slideshowSpeed: 3000,
+		touch: true
+	});
+
+});
