@@ -5,7 +5,7 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 html{
-    background-image: url("img/5-dots.png");
+    background-image: url(img/5-dots.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
