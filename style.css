@@ -5,7 +5,7 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 html{
-    background-image: url("fondo.jpg");
+    background-image: url("img/fondo.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,25 +85,25 @@ body{
     color: rgb(219, 0, 0);
 }
 .horario{
+    border-radius: 7px;
     background-color: black;
     color: rgb(255, 255, 255);
-    border: 2px solid white;
+    border: 4px solid white;
     width: 200px;
+    height: 480px;
     font-size: 20px;
-    padding: 10px;
     position: absolute;
     right: 80px;
     top: 110px;
-    opacity: .9;
-    height: 420px;
     text-align: left;
-
-    
+    font-family: 'Sriracha', cursive;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.794);
 }
 .horario h3{
     border-bottom: 2px solid white;
     font-family: 'Sriracha', cursive;
     color: rgb(219, 0, 0);
+    text-align: center;
 }
 .horario p{
     /* padding-top: 10px; */
@@ -122,29 +122,32 @@ body{
 
 
 .contacto{
+    border-radius: 7px;
     background-color: black;
     color: rgb(255, 255, 255);
-    border: 2px solid white;
+    border: 4px solid white;
     width: 200px;
-    height: 420px;
+    height: 480px;
     font-size: 20px;
-    padding: 10px;
     position: absolute;
     left: 80px;
     top: 110px;
-    opacity: .9;
     text-align: left;
     font-family: 'Sriracha', cursive;
+    font-family: 'Sriracha', cursive;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.794);
 }
 .contacto h3{
     border-bottom: 2px solid white;
     font-family: 'Sriracha', cursive;
     color: rgb(219, 0, 0);
+    text-align: center;
 }
 .contacto p{
     /* padding-top: 10px; */
     color: rgb(206, 200, 200);
     font-family: 'Sriracha', cursive;
+    padding: 10px;
 }
 .contacto span{
     color: white;
@@ -152,6 +155,13 @@ body{
     border-bottom: 1px solid white;
     font-family: 'Sriracha', cursive;
 }
+.items-contacto{
+    padding: 10px 20px;
+}
+
+
+
+
 .info{
     position: absolute;
     width: 100%;
@@ -183,20 +193,24 @@ body{
     height: 700px;
     display: flex;
     flex-flow: column;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.883);
     right: 0;
-    padding: 20px;
-    font-size: 20px;
+    padding-top: 20px;
     color: white;
     display: none;
 }
+
 .items-nav-responsive a{
     text-decoration: none;
     color: white;
     padding-left: 7px;
+    font-size: 30px;
 }
 .i-n-res{
     padding: 10px;
+}
+.i-n-res i{
+    color: rgb(219, 0, 0);
 }
 
 
@@ -207,11 +221,23 @@ body{
 }
 .f-lugar h3{
     display: inline-block;
-    border-bottom: 3px solid rgb(219, 0, 0);
+    border-bottom: 5px solid rgb(219, 0, 0);
     padding: 0;
     margin: 0%;
 }
-
+/* Footer */
+.footer{
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h4{
+    font-size: 40px;
+    color: white;
+}
 
 @media (max-width: 1250px){
     .main{
@@ -231,7 +257,6 @@ body{
     font-size: 20px;
     padding: 0px;
     position: inherit;
-    opacity: .9;
     text-align: left;
     justify-content: center;
 }
@@ -241,13 +266,16 @@ body{
     font-size: 20px;
     padding: 0;
     position: inherit;
-    opacity: .9;
     text-align: left;
 }
 }
 @media (max-width: 835px){
+    .main{
+        padding-bottom: 100px;
+    }
     .info{
         flex-direction: column;
+        height: 700px;
     }
     .contacto{
         margin: auto;
@@ -279,22 +307,19 @@ body{
     }
     .contacto{
         width: 270px;
-        height: 340px;
+        height: 440px;
         padding: 10px;
         margin-bottom: 40px;
     }
-       .horario{
+    .horario{
         width: 270px;
-        height: 340px;
+        height: 440px;
         padding: 10px;
     }
     .items-nav-responsive{
         width: 270px;
         padding: 20px;
         font-size: 20px;
-    }
-    .items-nav-responsive a{
-        border-bottom: 2px solid white;
     }
 }
 
